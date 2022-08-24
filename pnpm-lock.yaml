@@ -27,10 +27,10 @@ specifiers:
 
 dependencies:
   '@prisma/client': 4.2.1_prisma@4.2.1
-  '@trpc/client': 9.27.1_@trpc+server@9.27.1
-  '@trpc/next': 9.27.1_aa6q2e47ql7edy5qtqb4sllqhe
-  '@trpc/react': 9.27.1_lsv5lrloaktxua3ujwhxv56iee
-  '@trpc/server': 9.27.1
+  '@trpc/client': 9.27.2_@trpc+server@9.27.2
+  '@trpc/next': 9.27.2_kwroqqiq4ao45yqldumyuvlqcu
+  '@trpc/react': 9.27.2_e7pohnznr4qdgpqc5x4q3pmfcu
+  '@trpc/server': 9.27.2
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -284,30 +284,30 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@trpc/client/9.27.1_@trpc+server@9.27.1:
-    resolution: {integrity: sha512-srh3s1ekhV5fssqxdE5DagcW+bnWUXp4LWkuHTunPDUL5BaIs6l0FXE4wKMv9AFAcCw7xJOFx8VSwFl/raXqKQ==}
+  /@trpc/client/9.27.2_@trpc+server@9.27.2:
+    resolution: {integrity: sha512-rpsgJJMalOtki5VjcyheL0zdft23mDnoBHn5cJMZLf3ssymCZq2crbvCiUmCRU289lYHrqffaaZ+9PqCSsVKfg==}
     peerDependencies:
-      '@trpc/server': 9.27.1
+      '@trpc/server': 9.27.2
     dependencies:
       '@babel/runtime': 7.18.9
-      '@trpc/server': 9.27.1
+      '@trpc/server': 9.27.2
     dev: false
 
-  /@trpc/next/9.27.1_aa6q2e47ql7edy5qtqb4sllqhe:
-    resolution: {integrity: sha512-eEo5ZJygODPIxzuH0iQzL2xsrggNq/bLF6F9OdLQ/wG8+VI4jUzCxDUNRt42rARAiZG4Y40jdPullMd/Kud4PA==}
+  /@trpc/next/9.27.2_kwroqqiq4ao45yqldumyuvlqcu:
+    resolution: {integrity: sha512-5Xy13sH2c7usWyQtVQ7g7gjv7i1/3shGrtVJJEbdEXq8i0A7BUAg1Q1DjCL92d9otD2jXpnaqRAktrXLZRGCgQ==}
     peerDependencies:
-      '@trpc/client': 9.27.1
-      '@trpc/react': 9.27.1
-      '@trpc/server': 9.27.1
+      '@trpc/client': 9.27.2
+      '@trpc/react': 9.27.2
+      '@trpc/server': 9.27.2
       next: '*'
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
       react-query: ^3.37.0
     dependencies:
       '@babel/runtime': 7.18.9
-      '@trpc/client': 9.27.1_@trpc+server@9.27.1
-      '@trpc/react': 9.27.1_lsv5lrloaktxua3ujwhxv56iee
-      '@trpc/server': 9.27.1
+      '@trpc/client': 9.27.2_@trpc+server@9.27.2
+      '@trpc/react': 9.27.2_e7pohnznr4qdgpqc5x4q3pmfcu
+      '@trpc/server': 9.27.2
       next: 12.2.5_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -315,25 +315,25 @@ packages:
       react-ssr-prepass: 1.5.0_react@18.2.0
     dev: false
 
-  /@trpc/react/9.27.1_lsv5lrloaktxua3ujwhxv56iee:
-    resolution: {integrity: sha512-EX7GaZWvzF9WoyBDfO+54wV52x1nr31hMhnZiEKsZFgchnzjpIkYg0Q4XfZ/Nz0Puyn0Wf6ksMChbTXd0cTqSg==}
+  /@trpc/react/9.27.2_e7pohnznr4qdgpqc5x4q3pmfcu:
+    resolution: {integrity: sha512-d2Nu3gYD7W9B5J5GylLw41jElQexb9zzwOLmCUR54azhvkIjk2w5dZLLqG3ou7L4ZsnlLOHgyO/LMwrgR4U9ZA==}
     peerDependencies:
-      '@trpc/client': 9.27.1
-      '@trpc/server': 9.27.1
+      '@trpc/client': 9.27.2
+      '@trpc/server': 9.27.2
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
       react-query: ^3.37.0
     dependencies:
       '@babel/runtime': 7.18.9
-      '@trpc/client': 9.27.1_@trpc+server@9.27.1
-      '@trpc/server': 9.27.1
+      '@trpc/client': 9.27.2_@trpc+server@9.27.2
+      '@trpc/server': 9.27.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
     dev: false
 
-  /@trpc/server/9.27.1:
-    resolution: {integrity: sha512-r/Fg3DuuYhIvXx5ZSmQ+VVyeV8kZ+N5aa6B7KkDg5wY+o7c1kDygCl+ZJ8XgwNg+yM2JPXPZxetWmyUw/YvWNQ==}
+  /@trpc/server/9.27.2:
+    resolution: {integrity: sha512-LcXCC004SYWVdHqjSZVpoKkcM0tJNwWtvmjmE2Jir36F0siY1CCbr7g2vz6LcOtA/q7Jj5G2/x1qMWzlPq/Bwg==}
     dev: false
 
   /@types/json-schema/7.0.11:
@@ -744,7 +744,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /copy-anything/3.0.2:
     resolution: {integrity: sha512-CzATjGXzUQ0EvuvgOCI6A4BGOo2bcVx8B+eC2nF862iv9fopnPQwlrbACakNCHRIJbCSBj+J/9JeDf60k64MkA==}
@@ -1710,7 +1710,7 @@ packages:
     dev: true
 
   /nano-time/1.0.0:
-    resolution: {integrity: sha1-sFVPaa2J4i0JB/ehKwmTpdlhN+8=}
+    resolution: {integrity: sha512-flnngywOoQ0lLQOTRNexn2gGSNuM9bKj9RZAWSzhQ+UJYaAFG9bac4DW9VHjUAzrOaIcajHybCTHe/bkvozQqA==}
     dependencies:
       big-integer: 1.6.51
     dev: false
@@ -2117,7 +2117,7 @@ packages:
     dev: true
 
   /remove-accents/0.4.2:
-    resolution: {integrity: sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=}
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
     dev: false
 
   /resolve-from/4.0.0:
