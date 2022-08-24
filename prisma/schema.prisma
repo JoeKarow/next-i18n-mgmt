@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Language {
+    id           String        @id @default(cuid())
+    lang         String        @unique
+    translations Translation[]
+    createdAt    DateTime      @default(now())
+    updatedAt    DateTime      @updatedAt
+}
+
+model Category {
+    id           String        @id @default(cuid())
+    category     String        @unique
+    translations Translation[]
+    tags         Tag[]
+}
+
+model Tag {
+    id           String        @id @default(cuid())
+    category     Category      @relation(fields: [categoryId], references: [id])
+    categoryId   String
+    translations Translation[]
+}
+
+model Translation {
+    id         String   @id @default(cuid())
+    language   Language @relation(fields: [langId], references: [id])
+    langId     String
+    category   Category @relation(fields: [categoryId], references: [id])
+    categoryId String
+    tag        Tag      @relation(fields: [tagId], references: [id])
+    tagId      String
+}
