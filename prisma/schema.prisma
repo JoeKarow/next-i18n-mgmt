@@ -1,43 +1,58 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-generator client {
-    provider = "prisma-client-js"
-}
-
 datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
 }
 
+generator client {
+    provider = "prisma-client-js"
+    output   = "../node_modules/.prisma/client"
+}
+
 model Language {
-    id           String        @id @default(cuid())
-    lang         String        @unique
+    id           String        @id @default(uuid())
+    languageName String
+    langCode     String        @unique
     translations Translation[]
     createdAt    DateTime      @default(now())
     updatedAt    DateTime      @updatedAt
 }
 
 model Category {
-    id           String        @id @default(cuid())
+    id           String        @id @default(uuid())
     category     String        @unique
     translations Translation[]
     tags         Tag[]
 }
 
 model Tag {
-    id           String        @id @default(cuid())
+    id           String        @id @default(uuid())
+    tagName      String
     category     Category      @relation(fields: [categoryId], references: [id])
     categoryId   String
     translations Translation[]
+
+    @@unique([tagName, categoryId])
 }
 
 model Translation {
-    id         String   @id @default(cuid())
-    language   Language @relation(fields: [langId], references: [id])
-    langId     String
-    category   Category @relation(fields: [categoryId], references: [id])
-    categoryId String
-    tag        Tag      @relation(fields: [tagId], references: [id])
-    tagId      String
+    id          String        @id @default(uuid())
+    text        String
+    language    Language      @relation(fields: [langId], references: [id])
+    langId      String
+    category    Category      @relation(fields: [categoryId], references: [id])
+    categoryId  String
+    tag         Tag           @relation(fields: [tagId], references: [id])
+    tagId       String
+    placeholder Placeholder[]
+}
+
+model Placeholder {
+    id      String        @id @default(uuid())
+    key     String        @unique
+    type    String
+    format  String
+    inUseBy Translation[]
 }
