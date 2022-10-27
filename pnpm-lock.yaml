@@ -23,7 +23,7 @@ specifiers:
   '@trpc/server': ^9.27.1
   '@types/node': 18.11.7
   '@types/react': 18.0.24
-  '@types/react-dom': 18.0.7
+  '@types/react-dom': 18.0.8
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
   autoprefixer: ^10.4.8
@@ -68,7 +68,7 @@ devDependencies:
   '@faker-js/faker': 7.6.0
   '@types/node': 18.11.7
   '@types/react': 18.0.24
-  '@types/react-dom': 18.0.7
+  '@types/react-dom': 18.0.8
   '@typescript-eslint/eslint-plugin': 5.40.1_c4zyna56jjjrggqkyejnaxjxfu
   '@typescript-eslint/parser': 5.40.1_wyqvi574yv7oiwfeinomdzmc3m
   autoprefixer: 10.4.12_postcss@8.4.18
@@ -1099,8 +1099,8 @@ packages:
       parchment: 1.1.4
     dev: false
 
-  /@types/react-dom/18.0.7:
-    resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
+  /@types/react-dom/18.0.8:
+    resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
     dependencies:
       '@types/react': 18.0.24
     dev: true
