@@ -34,7 +34,7 @@ specifiers:
   prisma: ^4.3.0
   react: '18'
   react-dom: '18'
-  react-query: 3.39.2
+  react-query: 3.39.3
   superjson: ^1.9.1
   tailwindcss: ^3.1.8
   ts-node: ^10.9.1
@@ -54,13 +54,13 @@ dependencies:
   '@mantine/rte': 5.10.1_ynz4r3bmi75slbqnmaycv7w7wa
   '@prisma/client': 4.9.0_prisma@4.9.0
   '@trpc/client': 9.27.3_@trpc+server@9.27.3
-  '@trpc/next': 9.27.3_p2oyrayyzt6kv2wkol53d6wqda
-  '@trpc/react': 9.27.4_b2x5eodty2olqku2v5637snwpy
+  '@trpc/next': 9.27.3_ljvpyuq4fovx57yqx3tqtz53uy
+  '@trpc/react': 9.27.4_ad222gtnw5urvu3k6qftesms7e
   '@trpc/server': 9.27.3
   next: 12.3.4_pjwopsidmaokadturxaafygjp4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
+  react-query: 3.39.3_biqbaboplfbrettd7655fr4n2y
   superjson: 1.12.2
   zod: 3.20.2
 
@@ -1009,7 +1009,7 @@ packages:
       '@trpc/server': 9.27.3
     dev: false
 
-  /@trpc/next/9.27.3_p2oyrayyzt6kv2wkol53d6wqda:
+  /@trpc/next/9.27.3_ljvpyuq4fovx57yqx3tqtz53uy:
     resolution: {integrity: sha512-YsjyEWU8JdpbjkAl1x3I3VV6YspRLRJL2ncRgjq/+Unaz9uA/Qcy8Tl2QxEYZX6FCp1cHIlZ6EHQSQCC1hNUCQ==}
     peerDependencies:
       '@trpc/client': 9.27.3
@@ -1022,16 +1022,16 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.13
       '@trpc/client': 9.27.3_@trpc+server@9.27.3
-      '@trpc/react': 9.27.4_b2x5eodty2olqku2v5637snwpy
+      '@trpc/react': 9.27.4_ad222gtnw5urvu3k6qftesms7e
       '@trpc/server': 9.27.3
       next: 12.3.4_pjwopsidmaokadturxaafygjp4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
+      react-query: 3.39.3_biqbaboplfbrettd7655fr4n2y
       react-ssr-prepass: 1.5.0_react@18.2.0
     dev: false
 
-  /@trpc/react/9.27.4_b2x5eodty2olqku2v5637snwpy:
+  /@trpc/react/9.27.4_ad222gtnw5urvu3k6qftesms7e:
     resolution: {integrity: sha512-bP74Tf6vWcMoWYiTAvbWrieV9cFQiKUDKRoRj0+VeGJbxdbhdJyUzv4zos0T4SiSKuhgoEm9bP4jWU2NhNhpIA==}
     deprecated: 'Migrate to v10: https://trpc.io/docs/migrate-from-v9-to-v10. Also, this package has changed name to `@trpc/react-query`.'
     peerDependencies:
@@ -1046,7 +1046,7 @@ packages:
       '@trpc/server': 9.27.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
+      react-query: 3.39.3_biqbaboplfbrettd7655fr4n2y
     dev: false
 
   /@trpc/server/9.27.3:
@@ -3280,8 +3280,8 @@ packages:
     resolution: {integrity: sha512-kzmNjIgU32mO4mmH5+iUyrqlpFQhF8K2k7eZ4fdLSOPFrD1XgEuSBv9LDEgxRXTMBqMd8ppT0x6TIzqE5pdGdw==}
     dev: false
 
-  /react-query/3.39.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-F6hYDKyNgDQfQOuR1Rsp3VRzJnWHx6aRnnIZHMNGGgbL3SBgpZTDg8MQwmxOgpCAoqZJA+JSNCydF1xGJqKOCA==}
+  /react-query/3.39.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-nLfLz7GiohKTJDuT4us4X3h/8unOh+00MLb2yJoGTPjxKs2bc1iDhkNx2bd5MKklXnOD3NrVZ+J2UXujA5In4g==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || 18
       react-dom: '*'
